@@ -48,14 +48,7 @@ app.get("/aud", (req, res) => {
   }
 });
 
-async function op() {
 
-  const response = await fetch('https://ytdl.reelsremix.repl.co/aud/?url=https://youtu.be/DuZvDgpgFHs');
-  const data = await response;
-  console.log(data)
-
-}
-//setInterval(op, 500);
 app.listen(process.env.PORT || 3000, () => {
   console.log("App Running on Port 5000!");
 });
