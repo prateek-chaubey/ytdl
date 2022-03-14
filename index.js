@@ -56,6 +56,6 @@ async function op() {
 
 }
 //setInterval(op, 500);
-app.listen(5000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("App Running on Port 5000!");
 });
