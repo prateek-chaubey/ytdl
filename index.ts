@@ -51,4 +51,4 @@ headers: {
   
 };
 
-await serve(handler, {5000});
+serve(handler);
