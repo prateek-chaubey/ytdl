@@ -1,4 +1,4 @@
-import express from "npm:express@^4.18.2";
+import express from "https://esm.sh/express@4.18.2";
 import * as ytdl from "https://deno.land/x/ytdl_core@v0.1.2/mod.ts";
 const app=express();
 
