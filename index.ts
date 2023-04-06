@@ -2,9 +2,6 @@ import { serve } from "https://deno.land/std@0.182.0/http/server.ts";
 import * as ytdl from "https://deno.land/x/ytdl_core@v0.1.2/mod.ts";
 
 const handler = async function(req: Request){
-  const body = `Your user-agent is:\n\n${
-    req.headers.get("user-agent") ?? "Unknown"
-  }`;
 
 var url=new URL(req.url);
 console.log(url.pathname)
