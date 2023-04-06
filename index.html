@@ -242,12 +242,14 @@ url=new URL(u);
 alert("Enter a Valid URL");
 return;
 }
-if(url.hostname.indexOf("youtube.com") > -1){
+if((url.hostname.indexOf("youtube.com") > -1) || (url.hostname.indexOf("youtu.be") > -1) ){
 if(url.pathname.indexOf("shorts") > -1){
 id=url.pathname.substr(8,url.pathname.length);
 }
 else if(url.pathname.indexOf("watch") > -1){
 id=url.searchParams.get("v");
+}else if(url.hostname.indexOf("youtu.be") > -1){
+id=id=url.pathname.substr(1,url.pathname.length);
 }
 
 document.getElementsByClassName("formats")[0].innerHTML=`<div class="loading" ></div>`;
