@@ -38,7 +38,7 @@ headers: {
 } 
 });
 }else{
-  return new Response(`<h1>404 NOT FOUND BRUH 🤣🤣🤣🤣`, { 
+return new Response(`<h1>404 NOT FOUND BRUH 🤣🤣🤣🤣`, { 
 status: 200,
 headers: {
 "content-type": "text/html; charset=utf-8",
