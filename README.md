@@ -5,6 +5,7 @@
 
 </p>
 
+#### <a href="https://dash.deno.com/new?url=https://raw.githubusercontent.com/prateek-chaubey/ytdl/main/index.ts" >Deploy on Deno </a>
 
 ### Screenshots
 <table align=center >
