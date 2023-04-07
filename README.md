@@ -1,5 +1,10 @@
 <h1 align=center > YTDL</h1>
-<h3 align=center >A simple YouTube Videos/Shorts downloader built in Deno</h1>
+<h3 align=center >A simple YouTube Videos/Shorts downloader built in Deno </h3>
+<p align=center >
+<img src="https://img.shields.io/badge/deno%20js-000000?style=for-the-badge&logo=deno&logoColor=white" >
+
+</p>
+
 
 ### Screenshots
 <table align=center >
