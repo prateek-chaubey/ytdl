@@ -22,8 +22,8 @@ headers: {
 return new Response(`{"error":true}`, { 
 status: 200,
 headers: {
-"content-type": "application/json; charset=utf-8",
-"access-control-allow-origin":"*",
+"Content-Type": "application/json; charset=utf-8",
+"Access-Control-Allow-Origin":"*",
 } 
 });
 }  
