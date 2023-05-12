@@ -16,11 +16,12 @@ return new Response(`{"video":${JSON.stringify(yt.player_response.videoDetails)}
 status: 200,
 headers: {
 "content-type": "application/json; charset=utf-8",
+"Access-Control-Allow-Origin":"*",
 } 
 });
 }else{
 return new Response(`{"error":true}`, { 
-status: 200,
+status: 404,
 headers: {
 "Content-Type": "application/json; charset=utf-8",
 "Access-Control-Allow-Origin":"*",
@@ -40,7 +41,7 @@ headers: {
 });
 }else{
 return new Response(`<h1>404 NOT FOUND BRUH 🤣🤣🤣🤣`, { 
-status: 200,
+status: 404,
 headers: {
 "content-type": "text/html; charset=utf-8",
 } 
