@@ -12,7 +12,7 @@ if(ytdl.validateID(id)){
 
 let yt =await ytdl.getInfo(id); 
 
-return new Response(`{"video":${JSON.stringify(yt.player_response.videoDetails)},"stream":${JSON.stringify(yt.player_response.streamingData)},"captions":${JSON.stringify(yt.player_response.captions) || ""}}`, { 
+return new Response(`{"video":${JSON.stringify(yt.player_response.videoDetails)},"stream":${JSON.stringify(yt.player_response.streamingData)},"captions":${JSON.stringify(yt.player_response.captions) || "none"}}`, { 
 status: 200,
 headers: {
 "content-type": "application/json; charset=utf-8",
