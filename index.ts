@@ -29,6 +29,30 @@ headers: {
 });
 }  
 }
+else if(url.pathname.indexOf("audio") > -1 ){
+let id=url.searchParams.get("id");
+if(ytdl.validateID(id)){
+
+let yt =await ytdl.getInfo(id); 
+let audioFormats = ytdl.filterFormats(yt.formats, 'audioonly');
+return new Response(`{"audio":${JSON.stringify(audioFormats)}}`, { 
+status: 200,
+headers: {
+"content-type": "application/json; charset=utf-8",
+"Access-Control-Allow-Origin":"*",
+} 
+});
+}else{
+return new Response(`{"error":true}`, { 
+status: 404,
+headers: {
+"Content-Type": "application/json; charset=utf-8",
+"Access-Control-Allow-Origin":"*",
+} 
+});
+}  
+
+} 
 else if(url.pathname=="/"){
 let index=await Deno.readTextFile("./index.html");
   
