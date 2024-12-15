@@ -1,5 +1,5 @@
 import { serve } from "https://deno.land/std@0.182.0/http/server.ts";
-import * as ytdl from "https://deno.land/x/ytdl_core@v0.1.2/mod.ts";
+import ytdl from "npm:@distube/ytdl-core";
 
 const handler = async function(req: Request){
 
