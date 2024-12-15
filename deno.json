@@ -1,5 +1,5 @@
 {
   "imports": {
-    "chalk": "npm:@distube/ytdl-core"
+    "ytdl-core": "npm:@distube/ytdl-core"
   }
 }
