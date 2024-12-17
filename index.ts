@@ -1,5 +1,6 @@
 import { serve } from "https://deno.land/std@0.182.0/http/server.ts";
 import ytdl from "npm:@distube/ytdl-core";
+import express from "npm:express@4.18.2";
 
 const handler = async function(req: Request){
 
